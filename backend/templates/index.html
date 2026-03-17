@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">Codec Technologies</div>
+        <button class="new-chat">+ New Chat</button>
+        <div id="chat-history" class="chat-history"></div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Top Bar -->
+        <div class="topbar">
+            <h3>CUSTOMER SERVICE</h3>
+        </div>
+
+        <!-- Chat Area -->
+        <div id="chat-box" class="chat-box">
+
+            <!-- Welcome Screen -->
+            <div id="welcome" class="welcome">
+                <h1>👋 Hi Vishal</h1>
+                <p>How can I help you today?</p>
+
+                <div class="suggestions">
+                    <div onclick="quickMsg('Explain AI in simple terms')">Explain AI</div>
+                    <div onclick="quickMsg('Give me a project idea in AI')">Project Idea</div>
+                    <div onclick="quickMsg('Help me learn Machine Learning')">Learn ML</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Input -->
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Message AI..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </main>
+
+</div>
+
+<!-- JS -->
+<script src="/static/script.js"></script>
+<div class="watermark">
+  ©2026 Vishal Baibhav Panda • Built for Codec Technologies Internship
+</div>
+</body>
+</html>
